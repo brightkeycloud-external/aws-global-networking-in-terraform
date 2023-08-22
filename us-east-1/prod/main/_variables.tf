@@ -1,3 +1,10 @@
+variable "default_tags" {
+  default = {
+    TFRepoDirectory = "us-east-1/prod/main"
+  }
+  type = map(string)
+}
+
 variable "vpc_cidr" {
   default = "10.101.0.0/16"
   type = string

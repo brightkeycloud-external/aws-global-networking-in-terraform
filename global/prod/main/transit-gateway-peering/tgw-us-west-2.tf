@@ -23,6 +23,7 @@ module "us_west_2_tgw" {
   }
 
   tags = merge(
+    var.default_tags,
     data.terraform_remote_state.global_prod_main_remote.outputs.default_tags,
     {
     Name = "us-west-2-main-tgw"

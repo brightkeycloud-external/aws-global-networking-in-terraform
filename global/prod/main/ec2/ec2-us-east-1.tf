@@ -8,6 +8,7 @@ resource "aws_instance" "us_east_1_ec2" {
   iam_instance_profile   = aws_iam_instance_profile.ec2_demo_instance_profile.name
 
   tags = merge(
+    var.default_tags,
     data.terraform_remote_state.global_prod_main_remote.outputs.default_tags,
     {
     Name = "us-east-1-ec2"

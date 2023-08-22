@@ -18,5 +18,9 @@ module "vpc" {
   single_nat_gateway = false
   reuse_nat_ips = true
   external_nat_ip_ids = "${aws_eip.nat.*.id}"
-  tags = data.terraform_remote_state.global_prod_main_remote.outputs.default_tags
+  tags = merge(
+    var.default_tags,
+    data.terraform_remote_state.global_prod_main_remote.outputs.default_tags
+  )
+
 }

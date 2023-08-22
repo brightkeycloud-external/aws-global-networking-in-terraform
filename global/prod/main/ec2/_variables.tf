@@ -1,3 +1,10 @@
+variable "default_tags" {
+  default = {
+    TFRepoDirectory = "global/prod/main/ec2"
+  }
+  type = map(string)
+}
+
 variable "key_name" {
   default = "csmithaws"
   type = string
