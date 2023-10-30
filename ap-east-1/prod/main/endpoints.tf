@@ -6,8 +6,8 @@ resource "aws_vpc_endpoint" "ap_east_1_main_vpc_endpoint_gw" {
   route_table_ids = flatten([module.vpc.private_route_table_ids])
 
   tags = merge(
-    var.default_tags,
     data.terraform_remote_state.global_prod_main_remote.outputs.default_tags,
+    var.default_tags,
     {
     Name = "ap-east-1-prod-main-vpc-endpoint-gw"
     },

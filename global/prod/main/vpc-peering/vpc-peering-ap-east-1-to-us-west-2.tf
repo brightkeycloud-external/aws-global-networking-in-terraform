@@ -10,8 +10,8 @@ resource "aws_vpc_peering_connection" "ap_east_1_to_us_west_2" {
 #    allow_remote_vpc_dns_resolution = true
 #  }
   tags = merge(
-    var.default_tags,
     data.terraform_remote_state.global_prod_main_remote.outputs.default_tags,
+    var.default_tags,
     {
     Name = "prod-main-ap-east-1-to-us-west-2"
     },
