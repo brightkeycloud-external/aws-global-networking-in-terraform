@@ -26,8 +26,8 @@ data "aws_ami" "amazonlinux2_us_west_2" {
   owners = ["amazon"]
 }
 
-data "aws_ami" "amazonlinux2_ap_east_1" {
-  provider    = aws.ap-east-1
+data "aws_ami" "amazonlinux2_ap_southeast_1" {
+  provider    = aws.ap-southeast-1
   most_recent = true
   filter {
     name   = "name"

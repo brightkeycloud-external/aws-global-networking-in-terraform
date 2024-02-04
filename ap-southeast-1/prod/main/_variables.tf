@@ -1,6 +1,6 @@
 variable "default_tags" {
   default = {
-    TFRepoDirectory = "ap-east-1/prod/main"
+    TFRepoDirectory = "ap-southeast-1/prod/main"
   }
   type = map(string)
 }
@@ -11,7 +11,7 @@ variable "vpc_cidr" {
 }
 
 variable "availability_zones" {
-  default = ["ap-east-1a", "ap-east-1b", "ap-east-1c"]
+  default = ["ap-southeast-1a", "ap-southeast-1b", "ap-southeast-1c"]
   type = list(string)
 }
 
@@ -26,5 +26,5 @@ variable "private_subnet_cidr" {
 }
 
 variable "primary_az" {
-  default = "ap-east-1a"
+  default = "ap-southeast-1a"
 }

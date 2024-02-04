@@ -5,7 +5,7 @@ resource "aws_eip" "nat" {
 
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
-  name = "ap-east-1-prod-main-vpc"
+  name = "ap-southeast-1-prod-main-vpc"
   cidr = var.vpc_cidr
   enable_dns_hostnames = true
   enable_dns_support = true

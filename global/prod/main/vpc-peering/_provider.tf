@@ -8,8 +8,8 @@ provider "aws" {
 }
 
 provider "aws" {
-  alias  = "ap-east-1"
-  region = "ap-east-1"
+  alias  = "ap-southeast-1"
+  region = "ap-southeast-1"
 }
 
 provider "aws" {

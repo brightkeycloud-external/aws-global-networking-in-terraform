@@ -7,11 +7,11 @@ data "terraform_remote_state" "global_prod_main_remote" {
   }
 }
 
-data "terraform_remote_state" "ap_east_1_prod_main_remote" {
+data "terraform_remote_state" "ap_southeast_1_prod_main_remote" {
   backend = "s3"
   config = {
     bucket = "brightkey-terraform-globalnetwork-state-file-storage"
-    key    = "ap-east-1/prod/main/terraform.tfstate"
+    key    = "ap-southeast-1/prod/main/terraform.tfstate"
     region = "us-east-1"
   }
 }

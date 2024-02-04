@@ -8,7 +8,7 @@
 ### (any of the following three in any order)
 #### us-east-1/prod/main
 #### us-west-2/prod/main
-#### ap-east-1/prod/main
+#### ap-southeast-1/prod/main
 
 ### You then have a choice of transit-gateway or VPC peering
 You may test both, just make sure you destroy one before deploying the other
