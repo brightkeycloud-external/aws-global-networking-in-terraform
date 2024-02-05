@@ -1,5 +1,6 @@
 # aws-networking-terraform
 ## Deployment does require a specific order
+## You will have to change the name of the S3 bucket and DynamoDB tables
 ## perform terraform init/plan/apply in these directories
 ## Required:
 #### global
